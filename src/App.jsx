@@ -35,6 +35,7 @@ function App() {
   return (
     <>
       <section className="flex flex-col min-h-screen w-full bg-[#ccfcf0] items-center justify-center py-8 sm:py-12 lg:py-24 px-4 sm:px-6 lg:px-12 mx-auto">
+        <img className="h-64 w-64" src="/motivation.svg" alt="Motivation SVG" />
         <div className="flex flex-col items-center text-center w-full mb-8 sm:mb-12">
           <h1 className="text-2xl sm:text-3xl lg:text-5xl xl:text-7xl font-bold title-font mb-4 text-gray-900">
             Quote Generator
