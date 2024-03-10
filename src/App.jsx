@@ -50,7 +50,7 @@ function App() {
         <div className="rounded-xl bg-[#fff] p-4 sm:p-6 lg:p-8 w-full lg:w-1/2 text-center">
           <div
             onClick={copyToClipboard}
-            className="bg-[#f1f7f9] hover:bg-[#ade6e0] cursor-pointer rounded-xl p-4 sm:p-6 border-4 border-dashed border-[#2dbcaa] mb-4"
+            className="bg-[#f1f7f9] hover:bg-[#cafaf5] cursor-pointer rounded-xl p-4 sm:p-6 border-4 border-dashed border-[#2dbcaa] mb-4"
           >
             <h5 className="mb-2 text-lg sm:text-2xl font-semibold tracking-tight text-[#2dbcaa]">
               {quote}
