@@ -34,7 +34,7 @@ function App() {
 
   return (
     <>
-      <section className="flex flex-col min-h-screen w-full bg-[#ffffff] items-center justify-center py-8 sm:py-12 lg:py-24 px-4 sm:px-6 lg:px-12 mx-auto">
+      <section className="flex flex-col min-h-screen w-full bg-[#eef4f6] items-center justify-center py-8 sm:py-12 lg:py-24 px-4 sm:px-6 lg:px-12 mx-auto">
         <img className="h-64 w-64" src="/motivation.svg" alt="Motivation SVG" />
         <div className="flex flex-col items-center text-center w-full mb-8 sm:mb-12">
           <h1 className="text-2xl sm:text-3xl lg:text-5xl xl:text-7xl font-bold title-font mb-4 text-[#062a40]">
@@ -47,22 +47,22 @@ function App() {
             endeavors.
           </p>
         </div>
-        <div className="rounded-xl bg-[#f1f1f1] p-4 sm:p-6 lg:p-8 w-full lg:w-2/3 shadow text-center">
+        <div className="rounded-xl bg-[#fff] p-4 sm:p-6 lg:p-8 w-full lg:w-1/2 text-center">
           <div
             onClick={copyToClipboard}
             className="bg-[#f1f7f9] hover:bg-[#ade6e0] cursor-pointer rounded-xl p-4 sm:p-6 border-4 border-dashed border-[#2dbcaa] mb-4"
           >
-            <h5 className="mb-2 text-lg sm:text-2xl font-semibold tracking-tight text-[#062a40]">
+            <h5 className="mb-2 text-lg sm:text-2xl font-semibold tracking-tight text-[#2dbcaa]">
               {quote}
             </h5>
-            <p className="mb-3 text-sm sm:text-base font-normal text-gray-700">
+            <p className="mb-3 text-sm sm:text-base text-[#2dbcaa]">
               {" "}
               - {author}
             </p>
           </div>
           <button
             onClick={handleClick}
-            className="flex mx-auto font-semibold cursor-pointer text-[#062a40] bg-[#2dbcaa] border-0 py-2 px-6 sm:px-8 rounded-xl text-base sm:text-lg"
+            className="flex mx-auto font-semibold cursor-pointer text-white bg-[#2dbcaa] border-0 py-2 px-6 sm:px-8 rounded-xl text-base sm:text-lg"
           >
             Get Quote
           </button>
