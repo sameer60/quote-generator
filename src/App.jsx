@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import "./App.css";
@@ -19,11 +20,13 @@ function App() {
   };
 
   const handleClick = () => {
-    fetch("https://api.quotable.io/random")
+    fetch(
+      "https://cors-anywhere.herokuapp.com/https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en"
+    )
       .then((response) => response.json())
       .then((data) => {
-        setQuote(data.content);
-        setAuthor(data.author);
+        setQuote(data.quoteText);
+        setAuthor(data.quoteAuthor);
       })
       .catch((error) => console.error("Error fetching quote:", error));
   };
